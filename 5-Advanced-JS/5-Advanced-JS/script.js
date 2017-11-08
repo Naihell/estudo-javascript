@@ -81,6 +81,7 @@ retirementGermagy(1930);
 //retirement(65)(1990);
 */
 
+/*
 // Bind, call and apply
 var john = {
     name: 'John',
@@ -139,3 +140,40 @@ var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
 
 console.log(ages);
 console.log(fullJapan);
+*/
+
+// Desafio
+
+// Constructor
+function Question(question, answers, correct) {
+    this.question = question;
+    this.answers = answers;
+    this.correct = correct;
+}
+
+Question.prototype.displayQuestion() {
+    console.log(this.question);
+}
+
+var q1 = new Question('Is javascript the coolest programming language in the world?', 
+                        ['Yes', 'No'], 0);
+var q2 = new Question('What is the name of this course\'s teacher?', ['John', 'Micheal', 'Jonas'], 2);
+var q3 = new Question('What does best describe coding?', ['Boring', 'Hard', 'Fun', 'Tedious'], 2);
+
+var questions = [q1, q2, q3];
+
+var n = Math.floor(Math.random() * questions.length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
